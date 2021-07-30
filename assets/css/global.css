@@ -81,6 +81,7 @@ a:hover {
     display: flex;
     align-items: center;
     padding: 2% 0 0 4%;
+    z-index: 1;
 }
 #navigation-top ul {
     display: flex;
