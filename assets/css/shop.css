@@ -6,3 +6,27 @@
     border-color: var(--navSideColor);
     opacity: var(--navSideHoverOpacity);
 }
+
+/****************************************************************************/
+#shop {
+    display: flex;
+    align-items: center;
+}
+#shop > div {
+    width: 45%;
+}
+#shop div:first-of-type {
+    background: url(../img/section-composition4.jpg) center/cover no-repeat;
+    width: 55%;
+    height: 100vh;
+}
+#shop h1 {
+    padding: 8% 5%;
+    margin-bottom: 1em;
+}
+#shop p {
+    padding: 0% 15% 0 5%;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
