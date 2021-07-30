@@ -15,18 +15,71 @@
 #shop > div {
     width: 45%;
 }
-#shop div:first-of-type {
+#shop > div:first-of-type {
     background: url(../img/section-composition4.jpg) center/cover no-repeat;
     width: 55%;
     height: 100vh;
 }
-#shop h1 {
-    padding: 8% 5%;
-    margin-bottom: 1em;
+#shop h2 {
+    padding-top: 2em;
 }
 #shop p {
-    padding: 0% 15% 0 5%;
-    font-size: 1.2em;
-    line-height: 1.4;
-    margin-bottom: 1em;
+    line-height: 2.5;
 }
+#shop a {
+    padding: 1% 2%;
+    font-size: 0.8em;
+    background: var(--shop-button-bg);
+}
+
+/*--------------------------------------------------------------------------*/
+.shop-article {
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------*/
+.slide {
+    margin: 0 auto;
+    height: 50vh;
+    width: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+.slide > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: slide 45s infinite;
+    opacity: 0;
+    transform: scale(0.8);
+}
+.slide img {
+    height: 100%;
+}
+.slide > div:nth-child(2) {
+    animation-delay: 15s;
+}
+.slide > div:nth-child(3) {
+    animation-delay: 30s;
+}
+
+/* because of the overlapping runtime for each image the last keyframe is at 50% */
+@keyframes slide {
+    5% {
+        transform: scale(0.8);
+        /* opacity: 1; */
+    }
+    10% {
+        transform: scale(1);
+    }
+    15%,
+    35% {
+        opacity: 1;
+    }
+    45% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/****************************************************************************/

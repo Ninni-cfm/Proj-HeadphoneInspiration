@@ -28,6 +28,7 @@ html {
     scroll-behavior: smooth;
     --bgColor: #2e2e2e;
     --headLineColor: #ebccc2;
+    --shop-button-bg: #ebccc2;
     --textColor: #737373;
     --navTopColor: #867772;
     --navTopHoverColor: #fff;
