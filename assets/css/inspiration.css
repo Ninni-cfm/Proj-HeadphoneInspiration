@@ -6,3 +6,18 @@
     border-color: var(--navSideColor);
     opacity: var(--navSideHoverOpacity);
 }
+
+#inspiration {
+    width: 100vw;
+    /* min-height: 100vh; */
+}
+
+#inspiration video {
+    margin: 10% 20%;
+    width: 60%;
+}
+
+#inspiration > div {
+    margin: 10% 20%;
+    width: 59%;
+}
