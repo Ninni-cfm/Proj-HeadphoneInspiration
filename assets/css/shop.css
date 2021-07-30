@@ -1,0 +1,8 @@
+/*****************************************************************************
+    navigation left: activate 'shop'
+*/
+#nav-left-shop,
+#nav-left-shop .outer {
+    border-color: var(--navSideColor);
+    opacity: var(--navSideHoverOpacity);
+}

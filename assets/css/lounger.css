@@ -1,0 +1,8 @@
+/*****************************************************************************
+    navigation left: activate 'lounger'
+*/
+#nav-left-lounger,
+#nav-left-lounger .outer {
+    border-color: var(--navSideColor);
+    opacity: var(--navSideHoverOpacity);
+}

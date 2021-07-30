@@ -1,0 +1,165 @@
+/*****************************************************************************
+    Assets:
+    Font: Work sans
+    colors: 
+        background color:           #2e2e2e 
+        navigation top:             #867772 
+        headline color:             rgb(234, 204, 194) / #ebccc2 
+        text color:                 rgb(115, 115, 115) / #737373 
+        navigation (both!) hover,
+        navigation left active:     #fff 
+        navigation left inactive:   #fff with opacity less than 0.6
+*/
+
+/*****************************************************************************
+    fonts in use
+*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*****************************************************************************
+    hard reset
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    --bgColor: #2e2e2e;
+    --headLineColor: #ebccc2;
+    --textColor: #737373;
+    --navTopColor: #867772;
+    --navTopHoverColor: #fff;
+    --navSideColor: #fff;
+    --navSideOpacity: 0.6;
+    --navSideHoverOpacity: 1;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+
+    background: var(--bgColor);
+    color: var(--textColor);
+
+    /* default font size */
+    font-size: 16px;
+}
+
+/* some defaults */
+
+h1,
+h2,
+h3 {
+    color: var(--headLineColor);
+}
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/****************************************************************************/
+#navigation-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 2% 0 0 4%;
+}
+#navigation-top ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#navigation-top ul {
+    justify-self: end;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navigation-top li {
+    margin: 0 1%;
+}
+#navigation-top li:first-of-type,
+#navigation-top li:last-of-type {
+    margin: 0 4%;
+}
+
+/*--------------------------------------------------------------------------*/
+#navigation-top a {
+    color: var(--navTopColor);
+}
+#navigation-top a:visited {
+    color: var(--navTopColor);
+}
+#navigation-top a:hover {
+    color: var(--navTopHoverColor);
+}
+
+/****************************************************************************/
+#navigation-side {
+    position: fixed;
+    height: 100vh;
+    left: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+#navigation-side ul {
+    margin: auto 0;
+}
+.nav-left-vert-line {
+    width: calc(0.75em + 1px);
+    margin-bottom: 10%;
+    height: 2em;
+    border-right: 1px solid var(--navSideColor);
+    opacity: var(--navSideOpacity);
+}
+/*--------------------------------------------------------------------------*/
+.nav-left-item {
+    display: flex;
+    align-items: center;
+    color: var(--navSideColor);
+    opacity: var(--navSideOpacity);
+}
+.nav-left-item:visited {
+    color: var(--navSideColor);
+}
+.nav-left-item:hover {
+    color: var(--navSideColor);
+    opacity: var(--navSideHoverOpacity);
+}
+.nav-left-item p {
+    opacity: var(--navSideHoverOpacity);
+}
+/*--------------------------------------------------------------------------*/
+/* pseudo radio buttons */
+.outer {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    border-radius: 2em;
+    margin-right: 3vw;
+    border: 2px solid transparent;
+}
+.inner {
+    width: 1em;
+    height: 1em;
+    margin: 0 auto;
+    border-radius: 1em;
+    border: 1px solid var(--navSideColor);
+    opacity: var(--navSideOpacity);
+}
+
+/*****************************************************************************/

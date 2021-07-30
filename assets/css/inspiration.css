@@ -1,0 +1,8 @@
+/*****************************************************************************
+    navigation left: activate 'inspiration'
+*/
+#nav-left-inspiration,
+#nav-left-inspiration .outer {
+    border-color: var(--navSideColor);
+    opacity: var(--navSideHoverOpacity);
+}

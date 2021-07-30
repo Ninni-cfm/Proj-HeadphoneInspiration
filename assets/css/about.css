@@ -1,0 +1,48 @@
+/*****************************************************************************
+    navigation left: activate 'about'
+*/
+#nav-left-about,
+#nav-left-about .outer {
+    border-color: var(--navSideColor);
+    opacity: var(--navSideHoverOpacity);
+}
+
+/****************************************************************************/
+#about-1 h1 {
+    padding-left: 25%;
+    padding: 10% 25%;
+}
+#about-1 div {
+    margin: 0 6.5%;
+    height: 100vh;
+    background: url(../img/section-about-1.jpg) center/cover no-repeat;
+}
+
+/****************************************************************************/
+#about-2 {
+    padding: 10% 10% 10% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about-2 div {
+    width: 50%;
+}
+#about-2 > div:first-of-type {
+    background: url(../img/BS1_NYC_Home.webp) center/cover no-repeat;
+    height: 45vh;
+}
+
+#about-2 > div:last-of-type {
+    /* width: 40%; */
+    padding-left: 10%;
+}
+#about-2 h1 {
+    margin-bottom: 1em;
+}
+
+#about-2 p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+}
