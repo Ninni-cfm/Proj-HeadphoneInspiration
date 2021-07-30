@@ -20,29 +20,30 @@
 
 /****************************************************************************/
 #about-2 {
-    padding: 10% 10% 10% 15%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-#about-2 div {
-    width: 50%;
+#about-2 > div {
+    padding: 10% 0;
+    min-height: 40vh;
 }
 #about-2 > div:first-of-type {
-    background: url(../img/BS1_NYC_Home.webp) center/cover no-repeat;
-    height: 45vh;
+    width: 100%;
+    padding-left: 15%;
 }
-
 #about-2 > div:last-of-type {
-    /* width: 40%; */
-    padding-left: 10%;
+    padding: 0 10% 0 5%;
+}
+#about-2 img {
+    width: 100%;
 }
 #about-2 h1 {
     margin-bottom: 1em;
 }
-
 #about-2 p {
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 1em;
 }
+
+/****************************************************************************/

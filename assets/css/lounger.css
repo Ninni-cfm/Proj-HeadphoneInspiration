@@ -6,3 +6,32 @@
     border-color: var(--navSideColor);
     opacity: var(--navSideHoverOpacity);
 }
+
+/****************************************************************************/
+
+#lounger {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+#lounger > div {
+    width: 50%;
+    height: 100vh;
+}
+
+#lounger div {
+    width: 50%;
+}
+
+#lounger div:first-of-type {
+    background: url(../img/section-voyager.jpg) center/cover no-repeat;
+}
+
+#lounger h1 {
+    margin-bottom: 1em;
+}
+#lounger p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 1em;
+}
