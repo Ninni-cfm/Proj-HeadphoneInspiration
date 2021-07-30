@@ -7,18 +7,14 @@
     padding: 8% 10% 0 20%;
     display: flex;
     justify-content: space-between;
-}
-#contact > form {
+    align-items: center;
 }
 fieldset {
+    border: 1px solid var(--shop-button-bg);
     width: 30vw;
     height: 65vh;
 }
 
 #contact h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-#contact p {
+    text-align: left;
 }
