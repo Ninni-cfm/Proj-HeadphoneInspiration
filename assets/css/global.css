@@ -35,6 +35,8 @@ html {
     --navSideColor: #fff;
     --navSideOpacity: 0.6;
     --navSideHoverOpacity: 1;
+    --contactPageFormBackground: #1e1613;
+    --contactPageFormText: #ebccc2;
 }
 
 body {

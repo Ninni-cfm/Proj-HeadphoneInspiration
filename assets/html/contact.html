@@ -80,32 +80,47 @@
 
     <section id="contact">
         <form action="" id="subscribe">
-            <h1>Subscribe</h1>
             <fieldset>
+                <h1>Subscribe</h1>
 
+                <div>
+                    <img src="../img/beoplay-h9-1.webp" alt="">
+                    <p>You're only one step away from the hottest news and deals on earth for superior quality
+                        headphones!
+                    </p>
 
-                <p>You're only one step away from the hottest news on earth for sound systems </p>
+                    <p>Join us today and get an offer for articles like this once a week.</p>
 
-                <label for="email1">Email</label>
-                <input type="email" name="email1" id="email1" placeholder="Email adress">
-
-                <p>Yes, I want to stay tuned with the latest news, gimme me input</p>
-
-                <input type="button" value="subscribe" onclick="">
+                    <p>Zero spam! Only news and deals!</p>
+                </div>
+                <input type="email" name="email1" id="email1" placeholder="Email address">
+                <input type="button" value="Subscribe" onclick="subscribe()">
 
             </fieldset>
         </form>
 
         <form action="" id="message">
-            <h1>Contact</h1>
             <fieldset>
-                <!-- <legend> contact </legend> -->
+                <h1>Contact</h1>
 
-                <label for="email2">Email</label>
-                <input type="emai2" name="email2" id="email2" placeholder="Email adress">
+                <div>
+                    <p>You want to get in contact with us?</p>
+                    <p>Or do you just want to leave us a message?</p>
+                    <p>We are open for everything, just send us your message, we will answer as soon as possible.</p>
+                </div>
 
-                <p></p>
-                <input type="button" value="subscribe" onclick="">
+                <input type="text" name="name" id="name" placeholder="Your name">
+                <input type="tel" name="phone" id="phone" placeholder="Phone (optional)">
+                <input type="emai2" name="email2" id="email2" placeholder="Email address">
+                <textarea rows="2" name="msg" id="msg" placeholder="Your message"></textarea>
+
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter" checked>
+                    <label for="newsletter">By the way: I need the newsletter as well!</label>
+                </div>
+
+                <!-- <textarea rows="2" placeholder="Your message"></textarea> -->
+                <input type="button" value="Send" onclick="sendMessage()">
 
             </fieldset>
         </form>
